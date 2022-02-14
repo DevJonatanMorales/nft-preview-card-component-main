@@ -4,12 +4,12 @@ const linkFooter = document.getElementById("link_a");
 
 /* Agregar el hover*/
 const AddHover = () => { 
-    views.classList.add("cont__view-hover");
+    views.classList.add("card__cont__view-hover");
 }
 
 /* Remover el hover*/
 const RemoveHover = () => {
-    views.classList.remove("cont__view-hover");
+    views.classList.remove("card__cont__view-hover");
 }
 
 titulo.addEventListener("mouseenter", AddHover);

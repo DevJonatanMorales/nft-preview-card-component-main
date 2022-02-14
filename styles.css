@@ -10,7 +10,7 @@ body {
   color: #fff;
 }
 
-.container {
+.card {
   position: relative;
   top: 5vh;
   width: 300px;
@@ -23,14 +23,14 @@ body {
   box-shadow:  0.6rem 0.6rem hsl(217, 55%, 10%)
 }
 
-.view {
+.card__cont__img {
   display: flex;
   padding: 0;
   max-width: 260px;
   max-height: 260px;
 }
 
-.container__img {
+.card__img {
   border-radius: 10px;
   max-width: 260px;
   max-height: 260px;
@@ -38,7 +38,7 @@ body {
   margin-right: auto;
 }
 
-.cont__view {
+.card__cont__view {
   background-color: hsla(178, 100%, 50%, 0.5);
   position: fixed;
   width: 260px;
@@ -48,7 +48,7 @@ body {
   transition: transform 0.5s;
 }
 
-.view__icon {
+.card__icon__view {
   width: 45px;
   height: 45px;
   position: relative;
@@ -56,40 +56,40 @@ body {
   left: 42%;
 }
 
-.view:hover > .cont__view {
+.card__cont__img:hover > .card__cont__view {
   transform: scale(1);
   cursor: pointer;
 }
 
-.cont__view-hover {
+.card__cont__view-hover {
   transform: scale(1);
 }
 
-.container__h1 {
+.card__title {
   display: block;
   font-weight: 600;
   font-size: 18px;
   cursor: pointer;
 }
-.container_p {
+.card__text {
   font-size: 16px;
   font-weight: 400;
   color: hsl(215, 32%, 27%);
 }
 
-.container__h1,
-.container_p,
-.container_a {
+.card__title,
+.card__text,
+.card__cont__link {
   margin-bottom: 20px;
 }
 
-.container_a {
+.card__cont__link {
   font-weight: 300;
   display: flex;
   justify-content: space-between;
 }
 
-.link {
+.card__link {
   text-align: right;
   width: 85px;
   text-decoration: none;
@@ -99,34 +99,34 @@ body {
 }
 
 span,
-.link {
+.card__link {
   color: hsl(215, 32%, 27%);
 }
 
-.link_color {
+.card__link-aqua {
   color: hsl(178, 100%, 50%);
 }
 
-.link > .icons {
+.card__link > .card__icon__link {
   position: absolute;
   left: 0;
 }
 
-.footer {
+.card__cont__footer {
   display: flex;
   justify-content: start;
   padding-top: 20px;
   border-top: 1px solid hsl(0, 0%, 100%);
 }
 
-.footer__avatar {
+.card__profile {
   max-width: 40px;
   max-height: 40px;
   border: 1px solid white;
   border-radius: 50%;
 }
 
-.footer_a {
+.card__link__foo {
   color: #fff;
   text-decoration: none;
   position: relative;
@@ -146,10 +146,10 @@ span,
   color: hsl(228, 45%, 44%);
 }
 
-.container__h1:hover {
+.card__title:hover {
   color: hsl(178, 100%, 50%);
 }
 
-.footer_a:hover{
+.card__link__foo:hover{
   color: hsl(178, 100%, 50%);
 }
