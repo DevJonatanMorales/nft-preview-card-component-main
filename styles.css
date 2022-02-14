@@ -1,0 +1,141 @@
+@import url("https://fonts.google.com/specimen/Outfit");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: #fff;
+}
+
+.container {
+  position: relative;
+  top: 5vh;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  background-color: hsl(216, 50%, 16%);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.view {
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  max-width: 260px;
+  max-height: 260px;
+}
+
+.container__img {
+  border-radius: 12px;
+  max-width: 260px;
+  max-height: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cont-view {
+  background-color: hsla(178, 100%, 50%, 0.5);
+  position: fixed;
+  cursor: pointer;
+  width: 260px;
+  height: 260px;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.view__icon {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  top: 40%;
+  left: 42%;
+}
+
+.footer_a:hover .conte-view {
+  transform: scale(1);
+}
+
+.container__h1 {
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+}
+.container_p {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(215, 32%, 27%);
+}
+
+.container__h1,
+.container_p,
+.container_a {
+  margin-bottom: 20px;
+}
+
+.container_a {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  text-align: right;
+  width: 85px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  position: relative;
+}
+
+span,
+.link {
+  color: hsl(215, 32%, 27%);
+}
+
+.link_color {
+  color: hsl(178, 100%, 50%);
+}
+
+.link > .icons {
+  position: absolute;
+  left: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: start;
+  padding-top: 20px;
+  border-top: 1px solid hsl(0, 0%, 100%);
+}
+
+.footer__avatar {
+  max-width: 40px;
+  max-height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footer_a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-left: 37%;
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
