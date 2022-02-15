@@ -7,7 +7,8 @@
 body {
   font-family: "Outfit", sans-serif;
   background-color: hsl(217, 54%, 11%);
-  color: #fff;
+  color: #fff;  
+  height: 100%;
 }
 
 .container {
@@ -139,8 +140,11 @@ span,
 .attribution {
   position: absolute;
   bottom: 0;
-  margin-left: 7em;
+  margin: 0 auto;
+  padding: 10px auto;
   font-size: 11px;
+  width: 98%;
+  text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
