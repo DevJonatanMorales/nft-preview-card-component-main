@@ -25,6 +25,7 @@ body {
 }
 
 .card__cont__img {
+  cursor: pointer;
   display: flex;
   padding: 0;
   max-width: 260px;
@@ -55,11 +56,6 @@ body {
   position: relative;
   top: 40%;
   left: 42%;
-}
-
-.card__cont__img:hover > .card__cont__view {
-  transform: scale(1);
-  cursor: pointer;
 }
 
 .card__cont__view-hover {
@@ -99,7 +95,7 @@ body {
   position: relative;
 }
 
-span,
+.span,
 .card__link {
   color: hsl(215, 32%, 27%);
 }
@@ -108,7 +104,7 @@ span,
   color: hsl(178, 100%, 50%);
 }
 
-.card__link > .card__icon__link {
+.card__icon__link {
   position: absolute;
   left: 0;
 }
@@ -156,4 +152,9 @@ span,
 
 .card__link__foo:hover{
   color: hsl(178, 100%, 50%);
+}
+
+.card__cont__img:hover > .card__cont__view {
+  transform: scale(1);
+  cursor: pointer;
 }
