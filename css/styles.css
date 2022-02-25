@@ -13,8 +13,8 @@ body {
 
 .card {
   position: relative;
-  top: 5vh;
-  width: 300px;
+  top: 25vh;
+  width: 350px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -28,14 +28,14 @@ body {
   cursor: pointer;
   display: flex;
   padding: 0;
-  max-width: 260px;
-  max-height: 260px;
+  max-width: 310px;
+  max-height: 310px;
 }
 
 .card__img {
   border-radius: 10px;
-  max-width: 260px;
-  max-height: 260px;
+  max-width: 310px;
+  max-height: 310px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,8 +43,8 @@ body {
 .card__cont__view {
   background-color: hsla(178, 100%, 50%, 0.5);
   position: fixed;
-  width: 260px;
-  height: 260px;
+  width: 310px;
+  height: 310px;
   border-radius: 10px;
   transform: scale(0);
   transition: transform 0.5s;
@@ -55,7 +55,7 @@ body {
   height: 45px;
   position: relative;
   top: 40%;
-  left: 42%;
+  left: 43%;
 }
 
 .card__cont__view-hover {
@@ -65,11 +65,11 @@ body {
 .card__title {
   display: block;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 24px;
   cursor: pointer;
 }
 .card__text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: hsl(215, 32%, 27%);
 }
@@ -88,9 +88,9 @@ body {
 
 .card__link {
   text-align: right;
-  width: 85px;
+  width: 110px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   position: relative;
 }
@@ -107,6 +107,7 @@ body {
 .card__icon__link {
   position: absolute;
   left: 0;
+  height: 22px;
 }
 
 .card__cont__footer {
@@ -130,7 +131,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .attribution {
@@ -138,7 +139,7 @@ body {
   bottom: 0;
   margin: 0 auto;
   padding: 10px auto;
-  font-size: 11px;
+  font-size: 16px;
   width: 98%;
   text-align: center;
 }
