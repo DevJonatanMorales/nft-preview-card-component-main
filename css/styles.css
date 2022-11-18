@@ -4,47 +4,58 @@
   box-sizing: border-box;
 }
 
+:root {
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/*### Neutral*/
+
+--Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+--Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+--Very-dark-blue-line: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+}
+
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: "Outfit", sans-serif;
   background-color: hsl(217, 54%, 11%);
   color: #fff;  
-  height: 100%;
 }
 
 .card {
-  position: relative;
-  top: 25vh;
-  width: 350px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 360px;
+  height: 600px;
   border-radius: 10px;
   background-color: hsl(216, 50%, 16%);
-  padding: 20px;
+  padding: 25px;
   margin-bottom: 30px;
-  box-shadow:  0.6rem 0.6rem hsl(217, 55%, 10%)
+  box-shadow: 0 1rem 0.7rem 1rem hsl(217, 55%, 10%)
 }
 
 .card__cont__img {
   cursor: pointer;
   display: flex;
   padding: 0;
-  max-width: 310px;
-  max-height: 310px;
+  max-width: 303px;
+  max-height: 303px;
 }
 
 .card__img {
   border-radius: 10px;
-  max-width: 310px;
-  max-height: 310px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 303px;
+  height: 303px;
 }
 
 .card__cont__view {
-  background-color: hsla(178, 100%, 50%, 0.5);
+  background-color: var(--Cyan);
   position: fixed;
-  width: 310px;
-  height: 310px;
+  width: 303px;
+  height: 303px;
   border-radius: 10px;
   transform: scale(0);
   transition: transform 0.5s;
@@ -65,13 +76,13 @@ body {
 .card__title {
   display: block;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
 }
 .card__text {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
-  color: hsl(215, 32%, 27%);
+  color: var(--Soft-blue);
 }
 
 .card__title,
@@ -87,27 +98,18 @@ body {
 }
 
 .card__link {
-  text-align: right;
-  width: 110px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 300;
-  position: relative;
 }
 
 .span,
 .card__link {
-  color: hsl(215, 32%, 27%);
+  color: var(--Soft-blue);
 }
 
 .card__link-aqua {
   color: hsl(178, 100%, 50%);
-}
-
-.card__icon__link {
-  position: absolute;
-  left: 0;
-  height: 22px;
 }
 
 .card__cont__footer {
@@ -118,8 +120,8 @@ body {
 }
 
 .card__profile {
-  max-width: 40px;
-  max-height: 40px;
+  max-width: 35px;
+  max-height: 35px;
   border: 1px solid white;
   border-radius: 50%;
 }
@@ -131,7 +133,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .attribution {
@@ -139,11 +141,12 @@ body {
   bottom: 0;
   margin: 0 auto;
   padding: 10px auto;
-  font-size: 16px;
+  font-size: 14px;
   width: 98%;
   text-align: center;
 }
-.attribution a {
+.attribution__link {
+  text-decoration: none;
   color: hsl(228, 45%, 44%);
 }
 
