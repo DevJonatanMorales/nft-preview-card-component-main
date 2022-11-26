@@ -76,11 +76,11 @@ body {
 .card__title {
   display: block;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   cursor: pointer;
 }
 .card__text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--Soft-blue);
 }
@@ -99,7 +99,7 @@ body {
 
 .card__link {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
 }
 
@@ -133,21 +133,7 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 10px;
-  font-size: 14px;
-}
-
-.attribution {
-  position: absolute;
-  bottom: 0;
-  margin: 0 auto;
-  padding: 10px auto;
-  font-size: 14px;
-  width: 98%;
-  text-align: center;
-}
-.attribution__link {
-  text-decoration: none;
-  color: hsl(228, 45%, 44%);
+  font-size: 18px;
 }
 
 .card__title:hover {
